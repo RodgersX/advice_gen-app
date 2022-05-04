@@ -56,9 +56,10 @@ export default {
   border-radius: 10px
   color: white
   text-align: center
-  padding: 4rem
-  max-width: 80%
-  min-width: 50%
+  padding: 40px
+  box-shadow: 10px 10px 20px hsl(218, 23%, 16%)
+  min-width: 300px
+  width: 80%
   min-height: 300px
   margin: auto
   position: relative
@@ -68,12 +69,19 @@ export default {
   font-family: 'Poppins', sans-serif
 
 .refresh-btn
-  position: absolute
-  bottom: -10%
-  right: 47%
-  border-radius: 27px
-  padding: 1rem
   background-color: hsl(150, 80%, 60%)
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 60px
+  padding: 15px
+  height: 60px
+  border-radius: 50%
+  position: absolute
+  left: 50%
+  top: 102%
+  transform: translate(-50%, -60%)
+
 
 .refresh-btn:hover,
 .refresh-btn:active
@@ -81,7 +89,7 @@ export default {
   box-shadow: 0 2px 30px 1px hsl(150, 100%, 60%)
 
 .divider
-  margin-top: 4rem
+  margin-bottom: 20px
 
 .advice-title
   color: hsl(150, 100%, 66%)
