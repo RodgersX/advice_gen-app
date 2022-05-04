@@ -2,7 +2,11 @@
   <v-app id="app">
     <div class="advice-card">
       <p class="advice-title">ADVICE #{{ advice.id }}</p>
-      <p class="advice-text">"{{ advice.data }}"</p>
+      <p class="advice-text">
+        <i class="bx bxs-quote-left"></i>
+        {{ advice.data }}
+        <i class="bx bxs-quote-right"></i>
+        </p>
       <div class="d-flex align-center divider">
         <v-img
           :src="require('./assets/pattern-divider-mobile.svg')"
