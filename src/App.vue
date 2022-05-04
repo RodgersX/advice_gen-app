@@ -4,12 +4,13 @@
       <p class="advice-title">ADVICE #{{ advice.id }}</p>
       <p class="advice-text">"{{ advice.data }}"</p>
       <div class="d-flex align-center divider">
-        <v-divider color="grey"></v-divider>
-        <div class="mx-4">| |</div>
-        <v-divider color="grey"></v-divider>
+        <v-img
+          :src="require('./assets/pattern-divider-mobile.svg')"
+          alt="divider"
+        />
       </div>
       <button @click.stop="loadAdvice" class="refresh-btn">
-        <v-img :src="require('./assets/icon-dice.svg')"></v-img>
+        <v-img :src="require('./assets/icon-dice.svg')" alt="dice"></v-img>
       </button>
     </div>
   </v-app>
@@ -26,6 +27,10 @@ export default {
         id: null,
       },
     };
+  },
+
+  mounted() {
+    this.loadAdvice();
   },
 
   methods: {
